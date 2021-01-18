@@ -5,7 +5,7 @@
 				{{ weather.city }}
 			</div>
 			<div class="row">
-				<<router-link :to="{ name: 'Weatherdetail', params: {'city':'keil'} }" class="a-div"></router-link>
+				<router-link :to="{ name: 'Weatherdetail', params: {'city':'keil'} }" class="a-div"></router-link>
 				<div class="column-half">
 					<img />
 				</div>
