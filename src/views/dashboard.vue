@@ -6,17 +6,17 @@
 				<weather-card :weather="weather"></weather-card>
 			</template>
 			<div class="column">
-				<router-link  :to="{ name: 'Weatherdetail', params: {'city':'keil'} }"></router-link>
-				<div class="card">
-					<div>
-						{{ weather.city }}
-					</div>
-					<div class="row">
+				<router-link  :to="{ name: 'Weatherdetail', params: {'city':'keil'} }">
+					<div class="card">
 						<div>
-							<h3>Add</h3>
+						</div>
+						<div class="row">
+							<div>
+								<h3>Add</h3>
+							</div>
 						</div>
 					</div>
-				</div>
+				</router-link>
 			</div>
 		</div>
 	</div>
