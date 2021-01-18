@@ -75,14 +75,9 @@ body {
 /* Style the counter cards */
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-	padding: 35px;
+	padding: 5px;
 	text-align: center;
 	background-color: white;
-}
-.a-div{
-	display:block;
-	height:100%;
-	width:100%;
 }
 .box{
 	background-color: #f2f2f2 ;
