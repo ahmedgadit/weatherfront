@@ -2,40 +2,31 @@
 	<div class="box">
 		<p class="text">Dashboard</p>
 		<div class="row">
+			<template>
+				<weather-card :weather="weather"></weather-card>
+			</template>
 			<div class="column">
+				<router-link :tag="anchor" :to="{ name: 'Weatherdetail', params: {'city':'keil'} }" ></router-link>
 				<div class="card">
-					<h3>Card 1</h3>
-					<p>Some text</p>
-					<p>Some text</p>
-				</div>
-			</div>
-
-			<div class="column">
-				<div class="card">
-					<h3>Card 2</h3>
-					<p>Some text</p>
-					<p>Some text</p>
-				</div>
-			</div>
-
-			<div class="column">
-				<div class="card">
-					<h3>Card 3</h3>
-					<p>Some text</p>
-					<p>Some text</p>
-				</div>
-			</div>
-
-			<div class="column">
-				<div class="card">
-					<h3>Card 4</h3>
-					<p>Some text</p>
-					<p>Some text</p>
+					<div>
+						{{ weather.city }}
+					</div>
+					<div class="row">
+						<div>
+							<h3>Add</h3>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
 <script>
-
+export default{
+	data(){
+		return{
+			weather: [],
+		}
+	}
+}
 </script>
