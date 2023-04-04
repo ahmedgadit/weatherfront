@@ -1,0 +1,12 @@
+name: Deploy Site on Server
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Server
+        run: echo "${{ secrets.SSH_USER }}"
